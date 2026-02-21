@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,13 @@
         margin: 0;
         background: var(--bg);
         color: var(--text);
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial,
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Inter,
+          Arial,
           sans-serif;
       }
       .container {
@@ -295,7 +301,8 @@
 
     <script>
       // ===== Config
-      const API_BASE = 'http://localhost:8000'; // change for deploy
+      const API_BASE =
+        'https://trembl-sullivan-statutes-gras.trycloudflare.com';
 
       // ===== DOM
       const $ = (s) => document.querySelector(s);
@@ -376,7 +383,7 @@
         if (!h && !ref)
           showMsg(
             'Kalibratsiya ma’lumoti kiriting: bo‘yingiz yoki A4/karta tanlang.',
-            false
+            false,
           );
 
         try {
